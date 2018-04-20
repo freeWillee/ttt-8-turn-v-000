@@ -18,7 +18,10 @@ end
 # 1) if user's input is > 8, then false
 # 2) if space is occupied, then false --> defind a separate #position_taken? method.
 def valid_move?(board, index)
-
+  if board[index] > 9 || position_taken?(board, index)
+    true
+  else
+    false
 end
 
 #position_taken helper method to be used in #valid_move? function above.
