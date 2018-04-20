@@ -15,6 +15,16 @@ def input_to_index(input)
 end
 
 #validation test for a valid move
+# 1) if user's input is > 8, then false
+# 2) if space is occupied, then false --> defind a separate #position_taken? method.
 def valid_move?(board, index)
 
+end
+
+#position_taken helper method to be used in #valid_move? function above.
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    false
+  else
+    true
 end
