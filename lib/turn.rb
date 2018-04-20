@@ -33,3 +33,7 @@ def position_taken?(board, index)
     true
   end
 end
+
+# defines #move method
+def move(board, index, token = "X")
+end
