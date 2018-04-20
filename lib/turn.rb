@@ -22,6 +22,7 @@ def valid_move?(board, index)
     true
   else
     false
+  end
 end
 
 #position_taken helper method to be used in #valid_move? function above.
@@ -30,4 +31,5 @@ def position_taken?(board, index)
     false
   else
     true
+  end
 end
