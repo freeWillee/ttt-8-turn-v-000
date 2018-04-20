@@ -42,3 +42,5 @@ def move(board, index, token = "X")
     nil
   end
 end
+
+#define the turn method.
