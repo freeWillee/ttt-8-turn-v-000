@@ -46,4 +46,11 @@ end
 #define the turn method.
 def turn(board)
   puts "Please enter 1-9:"
+  index = input_to_index(gets.strip)
+  if valid_move(board, user_input)
+    move(board, index, token)
+  else
+    puts "That was an invalid entry."
+    turn(board)
+  end    
 end
