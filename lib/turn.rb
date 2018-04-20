@@ -19,7 +19,7 @@ end
 # 2) if space is occupied, then false --> defind a separate #position_taken? method.
 def valid_move?(board, user_input)
   index = input_to_index(user_input)
-  if board[index] > 8 || position_taken?(board, index)
+  if board[index].to_i > 8 || position_taken?(board, index)
     true
   else
     false
